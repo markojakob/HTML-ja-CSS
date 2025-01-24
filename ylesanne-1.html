@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- dokumendi tüüp on html -->
+<html lang="en">
+<!-- määrame ära, mis keelega tegu, siis brauser teab -->
+
+<head>
+	<meta charset="UTF-8"> <!-- defineeritakse character set https://www.utf8-chartable.de/ -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- The X-UA-Compatible meta tag helps render Web pages in older IE browsers. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- siin ütleb setting, et sisu laius on seadme laius. see on vajalik responsive lehtede puhul. hiljem tuleme selle juurde tagasi kui skaleeruvaid veebilehti tegema hakkame  -->
+	<title>Teksti vormindamine ja veebi markup 1</title>
+	<!-- Kõigepealt tee see kujundus lõpuni Figmas asuva juhendi alusel: https://www.figma.com/design/RNrjSx6xMCAMQ8iNaZGI0i/Untitled?node-id=1-2&t=LnCWsNIdORmU78qX-1 	
+	Seejärel kirjuta kujunduse järgi markup kood. 
+	-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+	<style>
+		* {
+			font-family: 'Jersey 15';
+		}
+
+		body {
+			margin: 0;
+		}
+
+		img {
+			width: 80px;
+			height: 80px;
+		}
+
+		#header {
+			display: flex;
+			justify-content: space-between;
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+
+		#header ul {
+			display: flex;
+			list-style: none;
+		}
+
+		#header ul li a {
+			color: black;
+		}
+
+		li {
+			margin: 20px
+		}
+
+		.container {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		#plokk1 {
+			max-width: 1440px;
+			margin: 0 auto;
+			text-align: center;
+			background-color: #000000;
+			color: #003CFF;
+			padding: 30px;
+		}
+
+		#plokk1 button {
+			background-color: red;
+			color: white;
+			width: 209px;
+			height: 48px;
+
+		}
+
+		#plokk1 h1 {
+			font-size: 100px;
+			text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+
+		}
+
+		#plokk1 h2 {
+			font-size: 40px;
+			text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+
+		}
+
+		#plokk2 {
+			width: 600px;
+			height: 130px;
+			background-color: #000000;
+			padding: 5px;
+		}
+
+		#plokk2 div {
+			margin-left: 30px;
+
+		}
+
+		#plokk2 h1 {
+			color: white;
+		}
+
+		#plokk2 button {
+			background-color: red;
+			color: white;
+			width: 209px;
+			height: 48px;
+		}
+
+		#paneel {
+			display: flex;
+			width: 1500px;
+			margin: 40px auto;
+
+			justify-content: space-between;
+		}
+
+		#purk {
+			width: 1500px;
+			height: 637px;
+			margin: 0 auto;
+			display: flex;
+		}
+
+		.info22 {
+
+			margin: 0 auto;
+			text-align: center;
+			color: white;
+
+		}
+
+		.info22 p:not(#secret) {
+			max-width: 1500px;
+			margin: 0 auto;
+			font-size: 70px;
+			text-align: center;
+
+		}
+
+		.info22 #secret {
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 50px;
+
+		}
+
+		#taust {
+			background-image: linear-gradient(180deg, #003BFF, #12235A);
+		}
+
+		.contact {
+			margin: 40px auto;
+			text-align: center;
+			background-color: #000000;
+			max-width: 1500px;
+			padding: 40px 0px;
+		}
+
+		.contact h1 {
+			color: white;
+		}
+
+		.contact p {
+			color: #ADB1B8;
+		}
+
+		.contact button{
+			background-color: #003BFF;
+			color: white;
+			width: 209px;
+			height: 48px;
+		}
+
+		.footer {
+			text-align: center;
+			background-color: #003CFF;
+			color: white;
+			padding: 40px;
+		}
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/color */
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration */
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/background */
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-size */
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+	</style>
+</head>
+
+<body>
+	<div id="header"> <img src="./pildid/Pepsi_2023.png">
+		<ul>
+			<li><a href="http://">Link</a></li>
+			<li><a href="http://">Contact</a></li>
+		</ul>
+	</div>
+	<div id="plokk1">
+		<h1>Welcome!</h1>
+		<h2>The absolute elite amongst refreshments</h2>
+		<button>Ready to drink?</button>
+	</div>
+
+	<div id="taust">
+		<div id="paneel">
+			<div id="plokk2">
+				<div>
+					<h1>Product locator</h1>
+					<button>View products</button>
+				</div>
+			</div>
+			<div id="plokk2">
+				<div>
+					<h1>Take your pepsi love to another level</h1>
+					<button>Pepsi +</button>
+				</div>
+			</div>
+		</div>
+		<div class="info22">
+			<img src="./pildid/pepsi prk.png" id="purk">
+			<p>
+				We’ve gathered together professionals to bring you the best cola in the world.
+			</p>
+			<p id="secret">
+				even better than coca-cola
+			</p>
+		</div>
+	</div>
+	<div class="contact">
+		<h1>Contact us</h1>
+		<p>Want to become a part of the Pepsi family? The best place to get started is online at pepsicojobs.com.</p>
+		<button>Become a member</button>
+	</div>
+	<div class="footer">
+		<p>© 2025 Pepsico All rights reserved.</p>
+	</div>
+</body>
+
+</html>
