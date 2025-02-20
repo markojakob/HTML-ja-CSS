@@ -1,14 +1,13 @@
 
 .bg-blue{
     background: linear-gradient(0.36turn, #3161ff, #000000, #ffffff);
-}
-.bg_blue {
     background-repeat: no-repeat;
     background-size: cover;  
     height: 100vh;  
 }
 .bg-blue .header {
-    background: linear-gradient(to left,#3161ff 60%, #ffffff )
+    background: linear-gradient(to left,#3161ff 60%, #ffffff );
+    
 }
 .header {
     display: flex;
@@ -41,24 +40,23 @@
 }
 
 
-.kast {
+.kast {   
     display: flex;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem;
     padding: 3rem;
 }
 
 .kast .praegune-etapp,
 .kast .tulevane-etapp {
-    height: 50px;
-    width: 50px;
-    background-color: #18f047;
-    border-radius: 70rem;
+    width: 10rem; 
+    height: 10rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 3rem; 
+    font-size: 3rem;
+    border-radius: 50%;
 }
 
 .kast .tulevane-etapp {
@@ -89,6 +87,7 @@
     justify-content: center;
     align-items: center;
     width: 100%; 
+    padding: 0.5rem;
 }
 
 .input-group .form-control {
@@ -120,102 +119,15 @@
     padding: 3rem;
 }
 
-@media (max-width: 768px) {
-    .header {
-        flex-direction: row; 
-        justify-content: flex-start; 
-        padding: 1rem; 
-        font-size: 2rem; 
-    }
-
-    .header h1 {
-        font-size: 3rem;
-    }
-
-    .kast {
-        flex-direction: row;
-        justify-content: center;
-        gap: 2rem;
-        padding: 2rem;
-    }
-
-    .kast .praegune-etapp,
-    .kast .tulevane-etapp {
-        font-size: 5vw; 
-        max-width: 10rem; 
-        max-height: 10rem;
-        min-width: 8rem;
-        min-height: 8rem;
-    }
-
-    .pealkiri {
-        font-size: 3rem;
-        padding: 1.5rem;
-    }
-    .input-group {
-        display: flex;
-        justify-content: center;
-    }
-    .input-group .form-control {
-        max-width: 100%;
-
-    }
-
-
-}
-
-
-@media (max-width: 576px) {
-
-    .header {
-        flex-direction: row; 
-        justify-content: flex-start;
-    }
-    .header .headerpilt {
-        max-width: 5rem;
-    }
-    .header h1 {
-        font-size: 2.5rem;
-    }
-
-    .kast {
-        flex-direction: row; 
-        justify-content: center; 
-        gap: 2rem; 
-        padding: 2rem; 
-    }
-
-    .kast .praegune-etapp,
-    .kast .tulevane-etapp {
-        font-size: 7vw; 
-        width: 30vw; 
-        height: 30vw;
-        max-width: 9rem;
-        max-height: 9rem;
-        min-width: 7rem;
-        min-height: 7rem;
-    }
-
-    .pealkiri {
-        font-size: 2.5rem;
-    }
-
-    .input-group .form-control {
-        max-width: 70rem;
-    }
-
-    .input-group .btn-secondary {
-        width: 50rem; 
-    }
-}
-
 .domain-header {
     color: white;
     text-align: center;
     padding: 2rem;
 }
 
-
+.domeenid {
+    padding: 1rem;
+}
 .row {
     background-color: white;
     max-width: 50rem;  
@@ -251,14 +163,41 @@
     background-color: #63fc84;
 
 }
-
-.edasi-nupp {
-    max-width: 6rem;
-    margin:0 78rem;
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.edasi-nupp .btn{
+    background-color: #2f2bff;
+    width: 7rem;
+}
+.footer .edasi-nupp .btn:after {
+    background-color: #3161ff;    	
 }
 
-@media (max-width: 360px) {
-    .bg-blue {
-        background-size: 100% 100%;  /* Ensure it's not repeating at smaller screen sizes */
+@media (max-width: 768px) {
+
+    .kast .praegune-etapp,
+    .kast .tulevane-etapp {
+    width: 8rem; 
+    height: 8rem; 
     }
+}
+
+@media (max-width: 576px) {
+    .kast .praegune-etapp,
+    .kast .tulevane-etapp {
+    width:5rem; 
+    height: 5rem; 
+    }
+} 
+
+@media (max-width: 360px) {
+    .kast .praegune-etapp,
+    .kast .tulevane-etapp {
+    width: 3rem; 
+    height: 3rem; 
+    font-size: 1.5rem;
+}
+
 }
