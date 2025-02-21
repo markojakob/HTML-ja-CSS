@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<body class="bg-blue">
+<body>
     <div class="header d-flex justify-content-between align-items-center text-white py-4 px-3">
         <h1 class="fs-1 text-center flex-grow-1">Domeeni registreerimine</h1>
         <div class="headerpilt">
@@ -18,22 +18,22 @@
                 alt="Account Logo" class="img-fluid rounded-circle" style="height: 5rem; width: 5rem;">
         </div>
     </div>
-
-    <div class="kast d-flex justify-content-center gap-5 py-4">
-        <div class="praegune-etapp d-flex bg-success text-white rounded-circle col-3">
-            <p>1</p>
+    <div class="container">
+        <div class="kast d-flex justify-content-center gap-5 py-4">
+            <div class="praegune-etapp d-flex bg-success text-white rounded-circle col-3">
+                <p>1</p>
+            </div>
+            <div class="tulevane-etapp d-flex bg-secondary text-white rounded-circle col-3">
+                <p>2</p>
+            </div>
+            <div class="tulevane-etapp d-flex bg-secondary text-white rounded-circle col-3">
+                <p>3</p>
+            </div>
         </div>
-        <div class="tulevane-etapp d-flex bg-secondary text-white rounded-circle col-3">
-            <p>2</p>
-        </div>
-        <div class="tulevane-etapp d-flex bg-secondary text-white rounded-circle col-3">
-            <p>3</p>
-        </div>
-    </div>
 
-    <h1 class="pealkiri text-white text-center py-3">Vali Domeen</h1>
+        <h1 class="pealkiri text-white text-center py-3">Vali Domeen</h1>
 
-    
+
         <div class="input-group justify-content-center mb-4">
             <input type="text" class="form-control w-50" placeholder="Sisesta domeeni nimi"
                 aria-label="sisesta domeeni nimi" aria-describedby="button-addon2">
@@ -70,9 +70,9 @@
                 <button class="btn btn-secondary" type="button" id="button-addon2">Otsi domeeni</button>
             </a>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     </div>
 </body>

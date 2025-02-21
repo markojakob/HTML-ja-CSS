@@ -1,11 +1,11 @@
 
-.bg-blue{
+body{
     background: linear-gradient(0.36turn, #3161ff, #000000, #ffffff);
     background-repeat: no-repeat;
     background-size: cover;  
     height: 100vh;  
 }
-.bg-blue .header {
+body .header {
     background: linear-gradient(to left,#3161ff 60%, #ffffff );
     
 }
@@ -132,23 +132,23 @@
     background-color: white;
     max-width: 50rem;  
     margin: 10px auto;  
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 1.25rem;  
     justify-content: space-between; 
     border-radius: 1rem; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-.col-sm-2 {
+.col-md-2 {
     max-width: 50%;  
 }
 
-.col-sm-2 button {
+.col-md-2 button {
     background-color: #18f047;  
     border: none;
 }
 
-.row .col-8 {
+.row .domeen {
     display: flex;
     align-items: center;
     justify-content: flex-start;  
@@ -159,7 +159,7 @@
     width: 100%;  
 }
 
-.row .col-sm-2 .btn:hover {
+.row .col-md-2 .btn:hover {
     background-color: #63fc84;
 
 }
@@ -199,5 +199,38 @@
     height: 3rem; 
     font-size: 1.5rem;
 }
+    .domeenid .row .domeen {
+        width: 200px;
+        word-wrap: break-word;
+    }
+}
 
+
+
+.header-page3 {
+    background: linear-gradient(to left,#3161ff 60%, #ffffff );
+}
+
+.container .osta-nupp .btn {
+    background-color: #2f2bff;
+    color: white;
+    width: 4rem;
+
+}
+.container .osta-nupp {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.tabel {
+    background-color: transparent;
+}
+.tabel .col-md-7 .mb-3 {
+    color: white;
+}
+
+.tabel .col-md-5 h2 {
+    color: white        ;
 }
