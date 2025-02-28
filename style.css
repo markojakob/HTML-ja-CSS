@@ -1,19 +1,18 @@
 
 body{
-    background: linear-gradient(0.36turn, #3161ff, #000000, #ffffff);
+    background-color: rgb(25, 101, 216);
     background-repeat: no-repeat;
     background-size: cover;  
     height: 100vh;  
 }
 body .header {
-    background: linear-gradient(to left,#3161ff 60%, #ffffff );
+    background-color: rgb(28, 50, 150);
     
 }
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
     padding: 2rem;
     font-size: 2.5rem; 
     width: 100%;
@@ -225,7 +224,8 @@ body .header {
 
 
 .tabel {
-    background-color: transparent;
+    max-width: 70rem;
+    background-color: black ;
 }
 .tabel .col-md-7 .mb-3 {
     color: white;
@@ -233,4 +233,27 @@ body .header {
 
 .tabel .col-md-5 h2 {
     color: white        ;
+}
+
+.container .tabel .col-md-7 .form-check-label {
+    color: white;
+}
+.container .tabel .col-md-7 .btn {
+    margin-top: 3rem;
+    display: block;
+    background-color: #2f2bff;
+    color: white;
+    width: 4rem;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.pealkiri {
+    margin-top: 15rem;
+}
+.container {
+    text-align: center;
 }
