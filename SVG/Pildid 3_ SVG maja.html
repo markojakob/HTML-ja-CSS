@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://tallinna-polutehnikum.github.io/htmlcssuxui/ylesanded/pildid-3-1.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pildid 3: SVG maja</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Pildid 3_ SVG maja_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./Pildid 3_ SVG maja_files/styles.css">
+  <script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension"
+    src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script>
+</head>
+
+<body>
+  <br>
+  <img src="./Pildid 3_ SVG maja_files/maja.png" alt="">
+  <h1>SVG</h1>
+  <ul>
+    <li><a href="http://tutorials.jenkov.com/svg/svg-coordinate-system.html">Paigutamine</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/circle-element.html">Ringid (uksenupp)</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/rect-element.html">Ruudud (aknad-uksed)</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/polyline-element.html">Hulkjoon (katus)</a></li>
+    <li><a href="http://tutorials.jenkov.com/svg/svg-gradients.html">Värvi maja (kasutades värviüleminekuid)</a></li>
+    <li><a href="https://jenkov.com/tutorials/svg/svg-transformation.html#translate">SVG elemendi asukoha muutmine</a>
+    </li>
+  </ul>
+  <br>
+  <div class="raam">
+    <svg width="800px" height="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <polyline id="korsten" points="500,300 525,300 525,485 500,485 500,435" style="stroke: gray; fill:gray">
+      </polyline>
+      <!-- sein -->
+      <polyline id="katus" points="480,405 535,315 590,405" style="stroke:rgb(68, 71, 87); fill:rgb(68, 71, 87)">
+      </polyline>
+
+      <rect x="485" y="405" height="80" width="100" style="stroke:red; fill:red"></rect>
+
+      <!-- uks -->
+      <polyline id="uks" points="540,435 575,435 575,485 540,485 540,435"
+        style="stroke: white; stroke-width: 3; fill: gray;" />
+      <!-- aken -->
+      <polyline id="aken" points="500,415 525,415 525,450 500,450 500,415"
+        style="stroke: white; stroke-width: 3; fill:rgb(0, 0, 0)"></polyline>
+      <!-- uksenupp -->
+      <circle cx="565" cy="460" r="4"></circle>
+      <image id="auto" href="./Pildid 3_ SVG maja_files/car-icon.svg" height="100" width="100">
+        <animate attributeName="image"
+         attributeType="XML" from="30" to="470" begin="0s" dur="5s" fill="remove"
+          repeatCount="indefinite" />
+        <image />
+    </svg>
+  </div>
+
+
+</body>
+
+</html>
